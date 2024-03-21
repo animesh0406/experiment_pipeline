@@ -116,7 +116,7 @@ stage('Deploy') {
             checkout([
                 $class: 'GitSCM',
                 branches: [[name: 'main']], // or specify the branch you want to checkout
-                userRemoteConfigs: [[url: 'https://github.com/animesh0406/notes-pipeline.git']]
+                userRemoteConfigs: [[url: 'https://github.com/animesh0406/experiment_pipeline.git']]
             ])
 
             // Use SSH credentials to copy docker-compose.yml and start docker-compose
