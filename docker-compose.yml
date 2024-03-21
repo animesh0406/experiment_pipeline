@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: frontend
+    image: animesh0406/mytodo-ui:client-1
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
+
+  backend:
+    container_name: backend
+    image: animesh0406/mytodo-back:server-1
+    ports:
+      - '4006:4006'
